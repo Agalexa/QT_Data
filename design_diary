@@ -1,0 +1,7 @@
+I think what I appreciated most about this assignment was being able to get more familiar with QT and being able to see
+just how easy the functionality is. I love the fact that it's as easy as having a push button named something like "submit"
+and then simply using self.submit.clicked.connect(self.pressed()) and then defining pressed() to be whatever you want and further more
+if you want to call other methods or method fucntions with pressed() all you have to do is something like self.plot(x,y) from within pressed
+and you'll get a graph!
+Sometimes programming can be a little intimidating so it can be cool to see just how straight forward somethings are and having this experience
+with QT definitely makes me appreciate the applications I use more. I also want to explore PYQT and python in general for 3d graphing.
