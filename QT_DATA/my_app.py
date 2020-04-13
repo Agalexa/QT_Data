@@ -1,9 +1,9 @@
-#from matplotlib import pyplot as plt
+
 from PyQt5 import QtWidgets, uic
 from pyqtgraph import PlotWidget, plot
 import pandas as pd 
 import pyqtgraph as pg
-import sys  # We need sys so that we can pass argv to QApplication
+import sys 
 import os
 
 
@@ -82,7 +82,6 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        #Load the UI Page
         uic.loadUi('mainwindow.ui', self)
 
         self.comboY.addItem("China")
@@ -96,9 +95,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.comboX.addItem("Korea")
 
         self.submit.clicked.connect(self.pressed)
-
-        #self.plot1([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
-        #self.plot2([22,33,44,55,66,77,88,],[22,33,44,55,66,77,88])
 
     def plot1(self, tot_days, tot_infected):
         self.Graphwidget.plot(tot_days, tot_infected)
@@ -132,8 +128,7 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             pass          
 
-        #self.plot1([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
-        #self.label.setText("X XOR Y =  " + str(xor))
+
 
 
 
